@@ -1,0 +1,60 @@
+[
+  {
+    "id": "iphone-16",
+    "brand": "Apple",
+    "name": "iPhone 16",
+    "category": "Smartphones",
+    "color": "#1d1d1f",
+    "rating": 4.7,
+    "reviewCount": 2318,
+    "description": "The latest iPhone with the A18 chip, a 48MP camera system, and all-day battery life.",
+    "highlights": ["A18 chip", "48MP dual camera", "6.1-inch Super Retina XDR", "5G ready"],
+    "variants": [
+      { "id": "128gb-black", "label": "128GB · Black", "price": 79900, "mrp": 79900, "inStock": true },
+      { "id": "256gb-black", "label": "256GB · Black", "price": 89900, "mrp": 89900, "inStock": true }
+    ]
+  },
+  {
+    "id": "macbook-air-m3",
+    "brand": "Apple",
+    "name": "MacBook Air (M3)",
+    "category": "Laptops",
+    "color": "#e8e8ed",
+    "rating": 4.8,
+    "reviewCount": 1042,
+    "description": "Strikingly thin and fast, the M3 MacBook Air handles everything with up to 18 hours of battery life.",
+    "highlights": ["Apple M3 chip", "13.6-inch Liquid Retina", "Up to 18 hrs battery"],
+    "variants": [
+      { "id": "8gb-256gb", "label": "8GB / 256GB", "price": 114900, "mrp": 119900, "inStock": true },
+      { "id": "8gb-512gb", "label": "8GB / 512GB", "price": 134900, "mrp": 139900, "inStock": true }
+    ]
+  },
+  {
+    "id": "samsung-s25",
+    "brand": "Samsung",
+    "name": "Galaxy S25",
+    "category": "Smartphones",
+    "color": "#111827",
+    "rating": 4.5,
+    "reviewCount": 876,
+    "description": "Galaxy AI meets a redesigned camera system and a titanium frame.",
+    "highlights": ["Snapdragon 8 Gen 4", "50MP AI camera", "120Hz AMOLED"],
+    "variants": [
+      { "id": "256gb-navy", "label": "256GB · Navy", "price": 74999, "mrp": 79999, "inStock": true }
+    ]
+  },
+  {
+    "id": "sony-wh1000xm5",
+    "brand": "Sony",
+    "name": "Sony WH-1000XM5",
+    "category": "Audio",
+    "color": "#1f2937",
+    "rating": 4.6,
+    "reviewCount": 1587,
+    "description": "Industry-leading noise cancellation tuned for all-day comfort.",
+    "highlights": ["Industry-leading ANC", "30-hr battery life", "Multipoint connection"],
+    "variants": [
+      { "id": "black", "label": "Black", "price": 29990, "mrp": 34990, "inStock": true }
+    ]
+  }
+]
