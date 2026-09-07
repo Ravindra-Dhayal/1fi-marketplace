@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Suspense, useState } from "react";
 import ShopTabs, { ShopTabId } from "@/components/ShopTabs";
 import TopBrandsPanel from "@/components/shop/TopBrandsPanel";
@@ -11,23 +12,23 @@ export default function ShopPage() {
   const [activeTab, setActiveTab] = useState<ShopTabId>("marketplace");
 
   return (
-    <div className="min-h-screen bg-white pb-24">
-      <div className="bg-gradient-to-br from-brand-primary-dark to-brand-primary px-5 pb-8 pt-6 text-white">
-        <p className="text-2xl font-bold leading-snug">
-          Pay later using
-          <br />
-          Mutual funds.
-        </p>
-        <p className="mt-2 text-sm text-white/80">
-          No credit score required. No interest. Backed by your investments.
-        </p>
-      </div>
+    <div className="min-h-screen bg-white px-4 pt-4 pb-24">
+        <section className="-mx-4 -mt-4 overflow-hidden">
+            <div className="relative aspect-[3/2] w-full">
+                <Image
+                    src="/shop_image.jpg"
+                    alt="Shop today, Pay later using Mutual funds"
+                    fill
+                    sizes="100vw"
+                    className="scale-110 translate-x-4 object-cover"
+                    priority
+                />
+            </div>
+        </section>
 
-      <div className="-mt-4 px-4">
-        <div className="rounded-3xl bg-white p-2 shadow-sm">
-          <ShopTabs active={activeTab} onChange={setActiveTab} />
+        <div className="relative z-[2] -mt-7 px-4">
+            <ShopTabs active={activeTab} onChange={setActiveTab} />
         </div>
-      </div>
 
       <div className="px-4 pt-4">
         {activeTab === "top-brands" && <TopBrandsPanel />}

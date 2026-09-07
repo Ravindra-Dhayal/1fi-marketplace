@@ -11,7 +11,7 @@ export interface Product {
   brand: string;
   name: string;
   category: string;
-  image: string; // Unsplash URL
+  image: string; 
   rating?: number;
   reviewCount?: number;
   description: string;
