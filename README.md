@@ -37,9 +37,15 @@ The bottom nav (Home, Shop, EMI Dues, Limit, Profile) and the two-option pill sw
 three options rather than redesigning it, per the assignment's note that a full redesign isn't
 expected.
 
-I only had hands-on screenshots of a handful of real screens, not the full app, so beyond those
-specific screens some spacing/shadow choices are my best-effort match rather than a verified
-pixel-perfect trace.
+Beyond screenshots, I verified several key values directly against the real app's computed CSS
+via Chrome DevTools rather than approximating them visually:
+- Tab switcher: exact overlap margin (`-mt-7`), border color (`#ece5ff`), background
+  (`#f5f0ff`), and shadow (`0 1px 3px rgba(113,44,220,0.06)`)
+- Hero image: exact displayed aspect ratio (3:2, derived from its rendered box dimensions)
+- Font family: confirmed `Geist, "Geist Fallback"` via the Computed panel's Rendered Fonts
+
+Spacing and shadow choices outside these specifically-verified elements are close visual
+matches based on screenshots, not measured pixel values.
 
 ## Structure
 
@@ -88,6 +94,15 @@ Product photos are real, freely-licensed stock photos (Unsplash), not the actual
 photography — this avoids using copyrighted Apple/Samsung/Sony marketing images in a mock
 project. Products without a photo fall back to a category-matched icon (phone, laptop,
 headphones, luggage, AC unit, watch) rendered via `ProductImage.tsx`.
+
+## Hero banner image
+
+The Shop page hero banner (`public/shop_image.jpg`) uses 1Fi's own marketing image, downloaded
+from their CDN. I want to flag this transparently rather than leave it unmentioned: it's their
+asset, not original work, used here to get an exact visual match while iterating on layout and
+spacing against the real design. I'm aware this is a meaningfully different choice than the
+product images above, and I'm open to discussing it or swapping in original artwork if that's
+preferred.
 
 ## Known interaction fix worth calling out
 
