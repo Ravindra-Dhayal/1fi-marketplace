@@ -22,6 +22,7 @@ export default function MarketplacePanel() {
 
   useEffect(() => {
     let cancelled = false;
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- standard fetch-on-mount/dep-change pattern (react.dev/learn/you-might-not-need-an-effect#fetching-data)
     setStatus("loading");
     getProducts({ simulateError })
       .then((data) => {

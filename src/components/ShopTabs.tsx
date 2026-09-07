@@ -13,17 +13,17 @@ export default function ShopTabs({ active, onChange }: { active: ShopTabId; onCh
       {TABS.map((tab) => {
         const isActive = tab.id === active;
         return (
-          <button
-            key={tab.id}
-            role="tab"
-            aria-selected={isActive}
-            onClick={() => onChange(tab.id)}
-            className={`flex-1 whitespace-nowrap rounded-full px-3 py-2.5 text-[13px] font-semibold transition-colors ${
-              isActive ? "bg-white text-brand-primary shadow-sm" : "text-gray-500 hover:text-gray-700"
-            }`}
-          >
-            {tab.label}
-          </button>
+            <button
+                key={tab.id}
+                role="tab"
+                aria-selected={isActive}
+                onClick={() => onChange(tab.id)}
+                className={`flex-1 whitespace-nowrap rounded-full px-2 py-2.5 text-[11px] font-semibold transition-colors sm:px-3 sm:text-[13px] ${
+                    isActive ? "bg-white text-brand-primary shadow-sm" : "text-gray-500 hover:text-gray-700"
+                }`}
+            >
+                {tab.label}
+            </button>
         );
       })}
     </div>

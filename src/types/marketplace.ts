@@ -11,7 +11,7 @@ export interface Product {
   brand: string;
   name: string;
   category: string;
-  color: string; // used to generate a placeholder image
+  image: string; // Unsplash URL
   rating?: number;
   reviewCount?: number;
   description: string;
